@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu&Order</title>
+    <link rel="stylesheet" href="menu&order.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h2>Menu</h2>
+        <div class="menu-item">
+          <h3>idly</h3>
+          <p>Price: ₹50</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <h3>Aalu puri</h3>
+          <p>Price: ₹70</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <h3>Gujarat Thalli</h3>
+            <p>Price: ₹100</p>
+            <button class="order-btn">Order Now</button>
+          </div>
+          <div class="menu-item">
+            <h3>Pyaz Pratha</h3>
+            <p>Price: ₹50</p>
+            <button class="order-btn">Order Now</button>
+          </div>
+          <div class="menu-item">
+            <h3>Veg Thali</h3>
+            <p>Price: ₹120</p>
+            <button class="order-btn">Order Now</button>
+          </div>
+          <div class="menu-item">
+            <h3>Poha</h3>
+            <p>Price: ₹70</p>
+            <button class="order-btn">Order Now</button>
+          </div>
+          <div class="menu-item">
+            <h3>Dosa</h3>
+            <p>Price: ₹40</p>
+            <button class="order-btn">Order Now</button>
+          </div>
+          <div class="menu-item">
+            <h3>Chicken Thali</h3>
+            <p>Price: ₹150</p>
+            <button class="order-btn">Order Now</button>
+          </div>
+          <div class="menu-item">
+            <h3>Delux Thali</h3>
+            <p>Price: ₹200</p>
+            <button class="order-btn">Order Now</button>
+          </div>
+      </div>
+</body>
+<script>document.querySelectorAll(".order-btn").forEach(function(button) {
+    button.addEventListener("click", function() {
+      alert("Order placed successfully!");
+      // Add functionality to handle order processing
+    });
+  });</script>
+</html>

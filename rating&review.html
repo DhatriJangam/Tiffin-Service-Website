@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating & Review</title>
+    <link rel="stylesheet" href="rating&review.css">
+</head>
+<body>
+    <div class="reviews-section">
+        <h2>Leave a Review</h2>
+        <form id="review-form">
+          <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+          <input type="number" id="rating" min="1" max="5" placeholder="Rating (1-5)" required>
+          <button type="submit">Submit Review</button>
+        </form>
+        <div class="review-list">
+          <h3>Reviews:</h3>
+          <!-- Display reviews here -->
+        </div>
+      </div>
+</body>
+<script>document.getElementById("review-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const reviewText = document.getElementById("review-text").value;
+    const rating = document.getElementById("rating").value;
+  
+    const reviewList = document.querySelector(".review-list");
+    const newReview = document.createElement("p");
+    newReview.textContent = Rating;{rating}{reviewText};
+    reviewList.appendChild(newReview);
+  
+    // Clear the form
+    document.getElementById("review-text").value = "";
+    document.getElementById("rating").value = "";
+  });</script>
+</html>
